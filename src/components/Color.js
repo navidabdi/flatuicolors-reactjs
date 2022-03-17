@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Color = () => {
+const Color = ({ color }) => {
   return (
-    <div className="color">
-      <p>Color Name</p>
+    <div className="color" style={{ backgroundColor: color.hex }}>
+      <p>{color.name}</p>
+      {/* {console.log(color)} */}
     </div>
   );
 };
