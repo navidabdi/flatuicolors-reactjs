@@ -1,0 +1,13 @@
+.color {
+  position: relative;
+  cursor: pointer;
+}
+.color__name {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.9;
+  text-transform: uppercase;
+}

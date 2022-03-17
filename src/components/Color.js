@@ -1,10 +1,9 @@
 import React from 'react';
-
+import './Color.css';
 const Color = ({ color }) => {
   return (
     <div className="color" style={{ backgroundColor: color.hex }}>
-      <p>{color.name}</p>
-      {/* {console.log(color)} */}
+      <p className="color__name">{color.name}</p>
     </div>
   );
 };

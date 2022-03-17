@@ -1,13 +1,12 @@
 import Color from './components/Color';
 import { PaletteV1Data } from './PaletteV1Data';
+import './App.css';
 const App = () => {
   return (
-    <div className="App">
-      <div>
-        {PaletteV1Data.map((color) => (
-          <Color key={color.id} color={color} />
-        ))}
-      </div>
+    <div className="app">
+      {PaletteV1Data.map((color) => (
+        <Color key={color.id} color={color} />
+      ))}
     </div>
   );
 };
