@@ -1,6 +1,4 @@
-import React from 'react';
-
-const data = () => {
+const PaletteV1Data = () => {
   return [
     {
       id: 1,
@@ -105,4 +103,4 @@ const data = () => {
   ];
 };
 
-export default data;
+export default PaletteV1Data;
