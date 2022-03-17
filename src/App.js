@@ -3,19 +3,23 @@ import { PaletteV1Data } from './PaletteV1Data';
 import './App.css';
 import { useState } from 'react';
 import CopyColor from './components/CopyColor/CopyColor';
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { copyTrigerAtom } from './atoms/copyTrigerAtom';
 const App = () => {
   const [copyTheColor, setCopyTheColor] = useState(null);
-  // const [showCopy, setShowCopy] = useState(false);
+  const [copyTriger, setCopyTriger] = useRecoilState(copyTrigerAtom);
 
   return (
     <div className="app">
+      {console.log(copyTriger)}
       {PaletteV1Data.map((color) => (
         <Color key={color.id} color={color} setCopyTheColor={setCopyTheColor} />
       ))}
-      {copyTheColor && <CopyColor copyTheColor={copyTheColor} />}
-      {setTimeout(() => {
-        setCopyTheColor(null);
-      }, 1500)}
+      <CopyColor
+        copyTheColor={copyTheColor}
+        copyTriger={copyTriger}
+        setCopyTriger={setCopyTriger}
+      />
     </div>
   );
 };
