@@ -31,3 +31,12 @@
   transform: translate(-50%, -50%);
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  .color__name {
+    display: none;
+  }
+  .color::before {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
