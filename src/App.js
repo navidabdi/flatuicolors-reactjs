@@ -1,4 +1,4 @@
-import Color from './components/Color';
+import Color from './components/Color/Color';
 import { PaletteV1Data } from './PaletteV1Data';
 import './App.css';
 const App = () => {
