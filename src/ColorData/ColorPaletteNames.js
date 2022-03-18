@@ -9,4 +9,9 @@ export const ColorPaletteNames = [
     name: 'American Palette',
     dataName: 'AmericanPalette',
   },
+  {
+    id: 3,
+    name: 'Aussie Palette',
+    dataName: 'AussiePalette',
+  },
 ];
