@@ -8,10 +8,11 @@ import { copyTrigerAtom } from './atoms/copyTrigerAtom';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import sound from './assets/audio.m4a';
+import { menuTrigerAtom } from './atoms/menuTrigerAtom';
 const App = () => {
   const [copyTheColor, setCopyTheColor] = useState(null);
   const [copyTriger, setCopyTriger] = useRecoilState(copyTrigerAtom);
-
+  const [menuTriger, setMenuTriger] = useRecoilState(menuTrigerAtom);
   const playSound = () => {
     const audio = new Audio(sound);
     audio.play();
@@ -20,7 +21,12 @@ const App = () => {
     <>
       <Header />
       {/* {console.log(Sound)} */}
-      <div className="app">
+      <div
+        className="app"
+        style={{
+          width: menuTriger ? '100%' : 'calc(100% - 220px)',
+        }}
+      >
         {PaletteV1Data.map((color) => (
           <Color
             key={color.id}

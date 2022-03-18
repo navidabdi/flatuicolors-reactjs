@@ -4,5 +4,8 @@ footer {
   justify-content: space-between;
   padding: 0 2rem;
   height: 6vh;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
   font-weight: 500;
 }
