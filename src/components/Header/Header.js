@@ -16,7 +16,6 @@ const Header = () => {
   return (
     <>
       <header>
-        {console.log(chooseColorPalette)}
         <div className="logo">Flat UI Colors</div>
         <div onClick={() => setSoundTriger(!soundTriger)} className="sound-btn">
           {soundTriger ? 'Sound On 🔊' : 'Sound Off 🔇'}
@@ -37,8 +36,11 @@ const Header = () => {
                 setMenuTriger(false);
               }}
               key={palette.id}
+              className={
+                palette.dataName === chooseColorPalette ? 'active' : ''
+              }
             >
-              {palette.name}
+              <span>{palette.name}</span>
             </li>
           ))}
         </ul>
