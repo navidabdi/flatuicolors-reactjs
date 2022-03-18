@@ -1,5 +1,5 @@
 import Color from './components/Color/Color';
-import { PaletteV1Data } from './PaletteV1Data';
+import { PaletteV1Data } from './ColorData/PaletteV1Data';
 import './App.css';
 import { useState } from 'react';
 import CopyColor from './components/CopyColor/CopyColor';
