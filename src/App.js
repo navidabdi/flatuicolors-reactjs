@@ -9,14 +9,13 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import sound from './assets/audio.m4a';
 import { menuTrigerAtom } from './atoms/menuTrigerAtom';
-import { chooseColorPaletteAtom } from './atoms/chooseColorPaletteAtom';
+import { colorPaletteSelector } from './atoms/colorPaletteSelector';
 const App = () => {
   const [copyTheColor, setCopyTheColor] = useState(null);
   const [copyTriger, setCopyTriger] = useRecoilState(copyTrigerAtom);
   const [menuTriger, setMenuTriger] = useRecoilState(menuTrigerAtom);
-  const [chooseColorPalette, setChooseColorPalette] = useRecoilState(
-    chooseColorPaletteAtom
-  );
+  const [chooseColorPalette, setChooseColorPalette] =
+    useRecoilState(colorPaletteSelector);
   const playSound = () => {
     const audio = new Audio(sound);
     audio.play();
@@ -28,10 +27,10 @@ const App = () => {
       <div
         className="app"
         style={{
-          width: menuTriger ? '100%' : 'calc(100% - 220px)',
+          width: menuTriger ? 'calc(100% - 220px)' : '100%',
         }}
       >
-        {chooseColorPalette.palette.map((color) => (
+        {chooseColorPalette.map((color) => (
           <Color
             key={color.id}
             color={color}

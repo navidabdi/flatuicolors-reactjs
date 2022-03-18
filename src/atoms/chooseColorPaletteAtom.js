@@ -4,8 +4,5 @@ import { AmericanPalette } from '../ColorData/AmericanPalette';
 
 export const chooseColorPaletteAtom = atom({
   key: 'chooseColorPaletteAtom',
-  default: {
-    id: 1,
-    palette: PaletteV1Data,
-  },
+  default: PaletteV1Data,
 });

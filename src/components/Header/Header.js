@@ -16,22 +16,26 @@ const Header = () => {
   return (
     <>
       <header>
+        {console.log(chooseColorPalette)}
         <div className="logo">Flat UI Colors</div>
         <div onClick={() => setSoundTriger(!soundTriger)} className="sound-btn">
           {soundTriger ? 'Sound On 🔊' : 'Sound Off 🔇'}
         </div>
         <div onClick={() => setMenuTriger(!menuTriger)} className="more-color">
-          {menuTriger ? '👉 Show More Colors' : '👇See These Palettes!'}
+          {menuTriger ? '👇See These Palettes!' : '👉 Show More Colors'}
         </div>
       </header>
       <aside
         className="menu"
-        style={{ transform: menuTriger ? 'translateX(220px)' : 'translate(0)' }}
+        style={{ transform: menuTriger ? 'translate(0)' : 'translateX(220px)' }}
       >
         <ul>
           {ColorPaletteNames.map((palette) => (
             <li
-              onClick={() => setChooseColorPalette(palette.id)}
+              onClick={() => {
+                setChooseColorPalette(palette.dataName);
+                setMenuTriger(false);
+              }}
               key={palette.id}
             >
               {palette.name}
