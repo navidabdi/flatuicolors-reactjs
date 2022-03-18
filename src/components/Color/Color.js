@@ -13,6 +13,7 @@ const Color = ({ color, setCopyTheColor, playSound }) => {
         onClick={() => {
           setCopyTheColor(color.hex);
           setCopyTriger(true);
+          navigator.clipboard.writeText(color.hex);
           if (soundTriger) playSound();
           setTimeout(() => {
             setCopyTriger(false);

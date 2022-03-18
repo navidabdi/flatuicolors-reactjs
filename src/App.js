@@ -1,5 +1,4 @@
 import Color from './components/Color/Color';
-import { PaletteV1Data } from './ColorData/PaletteV1Data';
 import './App.css';
 import { useState } from 'react';
 import CopyColor from './components/CopyColor/CopyColor';
@@ -23,7 +22,6 @@ const App = () => {
   return (
     <>
       <Header />
-      {/* {console.log(Sound)} */}
       <div
         className="app"
         style={{
