@@ -6,3 +6,8 @@ header {
   height: 6vh;
   font-weight: 500;
 }
+.sound-btn {
+  font-size: 1.05rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
