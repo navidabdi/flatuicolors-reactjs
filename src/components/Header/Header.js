@@ -1,11 +1,18 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
+import { chooseColorPaletteAtom } from '../../atoms/chooseColorPaletteAtom';
 import { menuTrigerAtom } from '../../atoms/menuTrigerAtom';
 import { soundTrigerAtom } from '../../atoms/soundTrigerAtom';
+import { ColorPaletteNames } from '../../ColorData/ColorPaletteNames';
 import './Header.css';
 const Header = () => {
   const [soundTriger, setSoundTriger] = useRecoilState(soundTrigerAtom);
   const [menuTriger, setMenuTriger] = useRecoilState(menuTrigerAtom);
+
+  const [chooseColorPalette, setChooseColorPalette] = useRecoilState(
+    chooseColorPaletteAtom
+  );
+
   return (
     <>
       <header>
@@ -22,8 +29,14 @@ const Header = () => {
         style={{ transform: menuTriger ? 'translateX(220px)' : 'translate(0)' }}
       >
         <ul>
-          <li>Palette v1</li>
-          <li>American Palette</li>
+          {ColorPaletteNames.map((palette) => (
+            <li
+              onClick={() => setChooseColorPalette(palette.id)}
+              key={palette.id}
+            >
+              {palette.name}
+            </li>
+          ))}
         </ul>
       </aside>
     </>
