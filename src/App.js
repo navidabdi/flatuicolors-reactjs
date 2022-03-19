@@ -9,9 +9,8 @@ import { colorPaletteSelector, copyTrigerAtom, menuTrigerAtom } from './atoms';
 const App = () => {
   const [copyTheColor, setCopyTheColor] = useState(null);
   const [copyTriger, setCopyTriger] = useRecoilState(copyTrigerAtom);
-  const [menuTriger, setMenuTriger] = useRecoilState(menuTrigerAtom);
-  const [chooseColorPalette, setChooseColorPalette] =
-    useRecoilState(colorPaletteSelector);
+  const [menuTriger] = useRecoilState(menuTrigerAtom);
+  const [chooseColorPalette] = useRecoilState(colorPaletteSelector);
   const playSound = () => {
     const audio = new Audio(sound);
     audio.play();
