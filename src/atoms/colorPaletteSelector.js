@@ -9,14 +9,14 @@ export const colorPaletteSelector = selector({
     const filter = get(chooseColorPaletteAtom);
 
     switch (filter) {
-      case 'PaletteV1Data':
+      case 1:
         return PaletteV1Data;
-      case 'AmericanPalette':
+      case 2:
         return AmericanPalette;
-      case 'AussiePalette':
+      case 3:
         return AussiePalette;
       default:
-        return AmericanPalette;
+        return PaletteV1Data;
     }
   },
 });

@@ -32,7 +32,7 @@ const Header = () => {
           {ColorPaletteNames.map((palette) => (
             <li
               onClick={() => {
-                setChooseColorPalette(palette.dataName);
+                setChooseColorPalette(palette.id);
                 setMenuTriger(false);
               }}
               key={palette.id}

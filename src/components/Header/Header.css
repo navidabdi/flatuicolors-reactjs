@@ -66,3 +66,15 @@ header {
 .menu ul li.active span::before {
   transform: translateX(0);
 }
+
+@media screen and (max-width: 992px) {
+  .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sound-btn,
+  .more-color {
+    font-size: 0.9rem;
+  }
+}
