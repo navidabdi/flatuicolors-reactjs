@@ -1,14 +1,11 @@
-import Color from './components/Color/Color';
 import './App.css';
 import { useState } from 'react';
-import CopyColor from './components/CopyColor/CopyColor';
-import { useRecoilState, useRecoilValue } from 'recoil';
-import { copyTrigerAtom } from './atoms/copyTrigerAtom';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import { useRecoilState } from 'recoil';
 import sound from './assets/audio.m4a';
-import { menuTrigerAtom } from './atoms/menuTrigerAtom';
-import { colorPaletteSelector } from './atoms/colorPaletteSelector';
+
+import { CopyColor, Color, Footer, Header } from './components';
+
+import { colorPaletteSelector, copyTrigerAtom, menuTrigerAtom } from './atoms';
 const App = () => {
   const [copyTheColor, setCopyTheColor] = useState(null);
   const [copyTriger, setCopyTriger] = useRecoilState(copyTrigerAtom);

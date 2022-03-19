@@ -1,10 +1,12 @@
 import { selector } from 'recoil';
 import { chooseColorPaletteAtom } from './chooseColorPaletteAtom';
-import { PaletteV1Data } from '../ColorData/PaletteV1Data';
-import { AmericanPalette } from '../ColorData/AmericanPalette';
-import { AussiePalette } from '../ColorData/AussiePalette';
-import { BritishPalette } from '../ColorData/BritishPalette';
-import { CanadianPalette } from '../ColorData/CanadianPalette';
+import {
+  PaletteV1Data,
+  AmericanPalette,
+  AussiePalette,
+  BritishPalette,
+  CanadianPalette,
+} from '../ColorData';
 export const colorPaletteSelector = selector({
   key: 'colorPaletteSelector',
   get: ({ get }) => {

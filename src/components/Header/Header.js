@@ -1,9 +1,11 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { chooseColorPaletteAtom } from '../../atoms/chooseColorPaletteAtom';
-import { menuTrigerAtom } from '../../atoms/menuTrigerAtom';
-import { soundTrigerAtom } from '../../atoms/soundTrigerAtom';
-import { ColorPaletteNames } from '../../ColorData/ColorPaletteNames';
+import {
+  chooseColorPaletteAtom,
+  menuTrigerAtom,
+  soundTrigerAtom,
+} from '../../atoms';
+import { ColorPaletteNames } from '../../ColorData';
 import './Header.css';
 const Header = () => {
   const [soundTriger, setSoundTriger] = useRecoilState(soundTrigerAtom);

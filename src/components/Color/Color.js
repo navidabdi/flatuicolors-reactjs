@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { copyTrigerAtom } from '../../atoms/copyTrigerAtom';
-import { soundTrigerAtom } from '../../atoms/soundTrigerAtom';
+import { copyTrigerAtom, menuTrigerAtom, soundTrigerAtom } from '../../atoms';
 import './Color.css';
 
 const Color = ({ color, setCopyTheColor, playSound }) => {
   const [copyTriger, setCopyTriger] = useRecoilState(copyTrigerAtom);
   const [soundTriger, setSoundTriger] = useRecoilState(soundTrigerAtom);
+  const [menuTriger, setMenuTriger] = useRecoilState(menuTrigerAtom);
   return (
     <>
       <div
@@ -14,6 +13,7 @@ const Color = ({ color, setCopyTheColor, playSound }) => {
           setCopyTheColor(color.hex);
           setCopyTriger(true);
           navigator.clipboard.writeText(color.hex);
+          setMenuTriger(false);
           if (soundTriger) playSound();
           setTimeout(() => {
             setCopyTriger(false);
