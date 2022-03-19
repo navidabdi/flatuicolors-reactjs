@@ -3,7 +3,7 @@ import './CopyColor.css';
 import { useRecoilState } from 'recoil';
 import { copyTrigerAtom } from '../../atoms/copyTrigerAtom';
 const CopyColor = ({ copyTheColor }) => {
-  const [copyTriger, setCopyTriger] = useRecoilState(copyTrigerAtom);
+  const [copyTriger] = useRecoilState(copyTrigerAtom);
   const opacityVal = copyTriger ? 1 : 0;
   const scaleVal = copyTriger ? 'scale(1)' : 'scale(1.2)';
   return (
