@@ -16,7 +16,7 @@ const Header = () => {
   );
 
   return (
-    <>
+    <div className="header">
       <header>
         <div className="logo">Flat UI Colors</div>
         <div onClick={() => setSoundTriger(!soundTriger)} className="sound-btn">
@@ -26,7 +26,7 @@ const Header = () => {
           {menuTriger ? '👇 See These Palettes!' : '👉Show More Colors🔥'}
         </div>
       </header>
-      <aside
+      <nav
         className="menu"
         style={{ transform: menuTriger ? 'translate(0)' : 'translateX(220px)' }}
       >
@@ -44,8 +44,8 @@ const Header = () => {
             </li>
           ))}
         </ul>
-      </aside>
-    </>
+      </nav>
+    </div>
   );
 };
 
