@@ -36,9 +36,7 @@ const Header = () => {
                 setMenuTriger(false);
               }}
               key={palette.id}
-              className={
-                palette.dataName === chooseColorPalette ? 'active' : ''
-              }
+              className={palette.id === chooseColorPalette ? 'active' : ''}
             >
               <span>{palette.name}</span>
             </li>

@@ -4,6 +4,7 @@ import { PaletteV1Data } from '../ColorData/PaletteV1Data';
 import { AmericanPalette } from '../ColorData/AmericanPalette';
 import { AussiePalette } from '../ColorData/AussiePalette';
 import { BritishPalette } from '../ColorData/BritishPalette';
+import { CanadianPalette } from '../ColorData/CanadianPalette';
 export const colorPaletteSelector = selector({
   key: 'colorPaletteSelector',
   get: ({ get }) => {
@@ -18,6 +19,8 @@ export const colorPaletteSelector = selector({
         return AussiePalette;
       case 4:
         return BritishPalette;
+      case 5:
+        return CanadianPalette;
       default:
         return PaletteV1Data;
     }
