@@ -9,16 +9,16 @@ header {
   background-color: #fff;
   z-index: 10;
 }
+.logo {
+  font-weight: 700;
+}
 .sound-btn,
 .more-color {
   font-size: 1.05rem;
   cursor: pointer;
   padding: 0.5rem 0;
 }
-.more-color {
-  width: 200px;
-  text-align: right;
-}
+
 .menu {
   position: absolute;
   right: 0;

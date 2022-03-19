@@ -21,7 +21,7 @@ const Header = () => {
           {soundTriger ? 'Sound On 🔊' : 'Sound Off 🔇'}
         </div>
         <div onClick={() => setMenuTriger(!menuTriger)} className="more-color">
-          {menuTriger ? '👇See These Palettes!' : '👉 Show More Colors'}
+          {menuTriger ? '👇 See These Palettes!' : '👉Show More Colors🔥'}
         </div>
       </header>
       <aside
