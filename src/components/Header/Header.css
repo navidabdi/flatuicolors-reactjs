@@ -14,6 +14,7 @@ header {
 }
 .logo {
   font-weight: 700;
+  font-size: 1rem;
 }
 .sound-btn,
 .more-color {
@@ -42,10 +43,11 @@ header {
   cursor: pointer;
   padding: 0.5rem 2rem;
   font-size: 1.09rem;
+  text-align: right;
 }
 .menu ul li.active {
   font-weight: 700;
-  color: #4834d4;
+  color: var(--primary-color);
 }
 .menu ul li span {
   position: relative;
@@ -60,9 +62,9 @@ header {
   content: '';
   width: 100%;
   height: 2px;
-  background-color: #4834d4;
+  background-color: var(--primary-color);
   bottom: 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: all 0.3s ease-in-out;
 }
 .menu ul li span:hover::before,

@@ -18,12 +18,14 @@ const Header = () => {
   return (
     <div className="header">
       <header>
-        <div className="logo">Flat UI Colors</div>
+        <a href="/">
+          <h1 className="logo">وبکیما فلت کالر</h1>
+        </a>
         <div onClick={() => setSoundTriger(!soundTriger)} className="sound-btn">
-          {soundTriger ? 'Sound On 🔊' : 'Sound Off 🔇'}
+          {soundTriger ? 'با صدا 🔊' : 'ساکت 🔇'}
         </div>
         <div onClick={() => setMenuTriger(!menuTriger)} className="more-color">
-          {menuTriger ? '👇 See These Palettes!' : '👉Show More Colors🔥'}
+          {menuTriger ? '👇 رنگ‌ها رو ببین' : 'رنگ‌های بیشتر🔥'}
         </div>
       </header>
       <nav

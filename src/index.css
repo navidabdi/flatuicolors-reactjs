@@ -1,4 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+@font-face {
+  font-family: iranYekan;
+  src: url(./assets/fonts/iranyekanwebregularfanum.woff);
+}
+
+:root {
+  --primary-color: #3a2ae9;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: block;
+  overflow: hidden;
+}
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+}
+a:hover::after {
+  transform: translateX(0);
+}
 
 * {
   box-sizing: border-box;
@@ -9,7 +40,7 @@ html {
   overflow: hidden;
 }
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'iranYekan', sans-serif;
   font-weight: 300;
   min-height: 100vh;
   overflow: hidden;

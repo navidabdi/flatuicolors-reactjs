@@ -1,26 +1,26 @@
 export const ColorPaletteNames = [
   {
     id: 1,
-    name: 'Palette v1',
+    name: 'پالت اصلی',
   },
   {
     id: 2,
-    name: 'American Palette',
+    name: 'پالت آمریکا',
   },
   {
     id: 3,
-    name: 'Aussie Palette',
+    name: 'پالت استرالیا',
   },
   {
     id: 4,
-    name: 'British Palette',
+    name: 'پالت انگلیس',
   },
   {
     id: 5,
-    name: 'Canadian Palette',
+    name: 'پالت کانادا',
   },
   {
     id: 6,
-    name: 'Chinese Palette',
+    name: 'پالت چین',
   },
 ];
