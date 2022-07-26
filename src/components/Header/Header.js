@@ -12,7 +12,7 @@ const Header = () => {
   const [menuTriger, setMenuTriger] = useRecoilState(menuTrigerAtom);
 
   const [chooseColorPalette, setChooseColorPalette] = useRecoilState(
-    chooseColorPaletteAtom
+    chooseColorPaletteAtom,
   );
 
   return (
@@ -35,7 +35,7 @@ const Header = () => {
             <li
               onClick={() => {
                 setChooseColorPalette(palette.id);
-                setMenuTriger(false);
+                // setMenuTriger(false);
               }}
               key={palette.id}
               className={palette.id === chooseColorPalette ? 'active' : ''}

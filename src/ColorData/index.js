@@ -4,6 +4,7 @@ import { AussiePalette } from './AussiePalette';
 import { BritishPalette } from './BritishPalette';
 import { CanadianPalette } from './CanadianPalette';
 import { ColorPaletteNames } from './ColorPaletteNames';
+import { ChinesePalette } from './ChinesePalette';
 
 export {
   PaletteV1Data,
@@ -12,4 +13,5 @@ export {
   BritishPalette,
   CanadianPalette,
   ColorPaletteNames,
+  ChinesePalette,
 };

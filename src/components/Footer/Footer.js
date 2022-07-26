@@ -7,8 +7,7 @@ const Footer = () => {
         Coded by <a href="https://github.com/navidabdi">Navid Dev</a>
       </div>
       <div className="inspir">
-        inspired by Flat UI Palette v1 by
-        <a href="https://flatuicolors.com/"> Flat UI Colors</a>
+        <a href="https://webkima.com/"> آکادمی وبکیما</a>
       </div>
     </footer>
   );
