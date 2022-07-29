@@ -7,6 +7,7 @@ import { ColorPaletteNames } from './ColorPaletteNames';
 import { ChinesePalette } from './ChinesePalette';
 import { DutchPalette } from './DutchPalette';
 import { FrenchPalette } from './FrenchPalette';
+import { GermanPalette } from './GermanPalette';
 
 export {
   PaletteV1Data,
@@ -18,4 +19,5 @@ export {
   ChinesePalette,
   DutchPalette,
   FrenchPalette,
+  GermanPalette,
 };
