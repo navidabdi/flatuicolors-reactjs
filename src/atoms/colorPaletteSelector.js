@@ -8,6 +8,7 @@ import {
   CanadianPalette,
   ChinesePalette,
   DutchPalette,
+  FrenchPalette,
 } from '../ColorData';
 export const colorPaletteSelector = selector({
   key: 'colorPaletteSelector',
@@ -29,6 +30,8 @@ export const colorPaletteSelector = selector({
         return ChinesePalette;
       case 7:
         return DutchPalette;
+      case 8:
+        return FrenchPalette;
       default:
         return PaletteV1Data;
     }
