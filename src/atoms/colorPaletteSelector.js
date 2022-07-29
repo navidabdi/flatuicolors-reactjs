@@ -14,6 +14,7 @@ import {
   RussianPalette,
   SpanishPalette,
   IranianPalette,
+  SwedishPalette,
 } from '../ColorData';
 export const colorPaletteSelector = selector({
   key: 'colorPaletteSelector',
@@ -47,6 +48,8 @@ export const colorPaletteSelector = selector({
         return RussianPalette;
       case 12:
         return SpanishPalette;
+      case 13:
+        return SwedishPalette;
       default:
         return PaletteV1Data;
     }

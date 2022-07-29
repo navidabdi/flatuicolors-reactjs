@@ -51,4 +51,8 @@ export const ColorPaletteNames = [
     id: 12,
     name: 'پالت اسپانیا',
   },
+  {
+    id: 13,
+    name: 'پالت سوئد',
+  },
 ];
