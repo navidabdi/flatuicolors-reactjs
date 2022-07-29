@@ -41,8 +41,8 @@ header {
 }
 .menu ul li {
   cursor: pointer;
-  padding: 0.5rem 2rem;
-  font-size: 1.09rem;
+  padding: 0.35rem 2rem;
+  font-size: 1rem;
   text-align: right;
 }
 .menu ul li.active {
