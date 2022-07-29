@@ -8,6 +8,7 @@ import { ChinesePalette } from './ChinesePalette';
 import { DutchPalette } from './DutchPalette';
 import { FrenchPalette } from './FrenchPalette';
 import { GermanPalette } from './GermanPalette';
+import { IndianPalette } from './IndianPalette';
 
 export {
   PaletteV1Data,
@@ -20,4 +21,5 @@ export {
   DutchPalette,
   FrenchPalette,
   GermanPalette,
+  IndianPalette,
 };
