@@ -13,6 +13,7 @@ import {
   IndianPalette,
   RussianPalette,
   SpanishPalette,
+  IranianPalette,
 } from '../ColorData';
 export const colorPaletteSelector = selector({
   key: 'colorPaletteSelector',
@@ -20,6 +21,8 @@ export const colorPaletteSelector = selector({
     const filter = get(chooseColorPaletteAtom);
 
     switch (filter) {
+      case 0:
+        return IranianPalette;
       case 1:
         return PaletteV1Data;
       case 2:

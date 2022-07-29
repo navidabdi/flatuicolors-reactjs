@@ -11,6 +11,7 @@ import { GermanPalette } from './GermanPalette';
 import { IndianPalette } from './IndianPalette';
 import { RussianPalette } from './RussianPalette';
 import { SpanishPalette } from './SpanishPalette';
+import { IranianPalette } from './IranianPalette';
 
 export {
   PaletteV1Data,
@@ -26,4 +27,5 @@ export {
   IndianPalette,
   RussianPalette,
   SpanishPalette,
+  IranianPalette,
 };

@@ -1,5 +1,9 @@
 export const ColorPaletteNames = [
   {
+    id: 0,
+    name: 'پالت ایران',
+  },
+  {
     id: 1,
     name: 'پالت اصلی',
   },
