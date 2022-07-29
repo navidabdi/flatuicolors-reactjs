@@ -13,6 +13,7 @@ import { RussianPalette } from './RussianPalette';
 import { SpanishPalette } from './SpanishPalette';
 import { IranianPalette } from './IranianPalette';
 import { SwedishPalette } from './SwedishPalette';
+import { TurkishPalette } from './TurkishPalette';
 
 export {
   PaletteV1Data,
@@ -30,4 +31,5 @@ export {
   SpanishPalette,
   IranianPalette,
   SwedishPalette,
+  TurkishPalette,
 };
